@@ -4,7 +4,7 @@ pipeline {
         stage('checkout') {
             steps {
                 cleanWs()
-                git credentialsId: 'Jenkins-Github-Admin', url: 'https://github.com/CHERUKURIPRAVEEN/devops-assignment.git', branch: "${params.BRANCH}"
+                git credentialsId: 'Jenkins-Github-Admin', url: 'https://github.com/CHERUKURIPRAVEEN/jenkins_multibranch.git'
             }
         }
         stage('BranchValidation') {
